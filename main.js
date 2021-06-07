@@ -105,6 +105,11 @@ while (next){
     if (x == 2 && y == 2) {
         console.log("You are now at The top of Death Mountain! Just take in that view! ")
     }
+
+    //outer boundaries
+    if (x > 2 || y > 2 || x < 2 || y > 2) {
+        console.log("You've gone beyond the boundaries! Please turn back now.")
+    }
     //current position prompt
         console.log(`your current coordinates are (${x},${y}).`)
     const player = (prompt(`would you like to move "up", "down", "left", or "right"?) `))
